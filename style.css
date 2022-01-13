@@ -1,0 +1,13 @@
+h1 {
+    background: purple;
+}
+
+main {
+    padding: 10px;
+    background: green;
+}
+
+section {
+    padding: 20px;
+    background: red;
+}
