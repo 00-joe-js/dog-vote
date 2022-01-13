@@ -1,13 +1,69 @@
-h1 {
-    background: purple;
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
 }
 
-main {
-    padding: 10px;
-    background: green;
+#app {
+    height: 100vh;
+    display: flex;
 }
 
-section {
+/* Voting interface starts here */
+
+#voting-interface {
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.voting-entry {
     padding: 20px;
-    background: red;
+    height: 600px;
+    width: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.voting-entry img {
+    width: 100%;
+}
+
+.voting-entry button {
+    background: white;
+    border: 1px solid black;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.voting-entry button:hover {
+    background: lightgray;
+}
+
+/* Hall of fame starts here */
+
+#hall-of-fame {
+    background: rgb(192, 192, 192);
+    height: 100%;
+    width: 450px;
+}
+
+#hall-of-fame h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery img {
+    width: 75px;
 }
